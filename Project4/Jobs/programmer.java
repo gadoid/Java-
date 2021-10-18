@@ -4,5 +4,5 @@ import Data;
 public class programmer {
     String name ;
     int number ;
-    
+    int  a;
 }
