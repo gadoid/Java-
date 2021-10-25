@@ -5,7 +5,7 @@ public class test30 {
         String n = t ;
         while (true){
             int m = n.indexOf(s);
-            if(m  != null){
+            if(m){
             n =n.substring(m);
             }
         }
