@@ -14,6 +14,6 @@ public class test30 {
     }
     public static void main(String[] args) {
         int t = counter(args[0],args[1]);
-        System.out.println(t);
+        System.out.println(t);.
     }
 }
