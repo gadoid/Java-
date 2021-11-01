@@ -1,5 +1,5 @@
 public enum ee {
-    private ee() {
+    private ee() {,
         
     }
 }
