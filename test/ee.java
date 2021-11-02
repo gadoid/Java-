@@ -1,5 +1,4 @@
-public enum ee {
-    private ee() {
-        
-    }
+enum ee {
+    sprint,s,d,a;
+
 }
