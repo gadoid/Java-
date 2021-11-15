@@ -923,6 +923,38 @@ JDK 5.0新增
 2 内部定义成员
 3 可以指定默认值，使用default 定义
 4 如果自定义注解没有成员，表明是一个标识作用
+
 public @interface  注解名 {
     String value() default value;
 }
+
+### 元注解
+
+JDK 提供了4个可以修饰注解的注解
+@Retention 指明该注解的生命周期
+@Target 指明注解只能使用在某些对象
+@Documented  用于指定对应的注解被提取成文档
+@Inherited 被修饰的注解 具有继承性
+
+### JDK 1.8
+
+重复注解
+在 myannoation上声明@repeatable 成员值为MyAnnotations.class
+Myannoation 的target和Retention和MyAnnotations相同
+
+类型注解
+TYPE_USE    注解可以添加在类型前
+TYPE_Parameter  注解可以添加在变量声明时
+
+## 集合
+
+1 集合\数组都是对多个数据进行存储操作的结构，简称Java容器
+    说明：此时的存储， 主要指的是内存层面的存储，不涉及道持久化的存储
+2 数据在存储多个数据方面的特定
+    数组    初始化后 长度就确定了
+            数组一旦定义好，元素的类型也确定了
+            一旦初始化后，长度不可以修改
+            数组中提供的方法非常有限
+            获取数组中实际元素的个数的需求 数组没有提供对应的属性或方法
+            数组存储数据的特点: 有序 可重复  无法满足 无序 不可重复的需求
+            
