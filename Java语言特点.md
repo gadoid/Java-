@@ -946,7 +946,7 @@ Myannoation 的target和Retention和MyAnnotations相同
 TYPE_USE    注解可以添加在类型前
 TYPE_Parameter  注解可以添加在变量声明时
 
-## 集合
+## 集合 （容器）
 
 1 集合\数组都是对多个数据进行存储操作的结构，简称Java容器
     说明：此时的存储， 主要指的是内存层面的存储，不涉及道持久化的存储
@@ -958,3 +958,11 @@ TYPE_Parameter  注解可以添加在变量声明时
             获取数组中实际元素的个数的需求 数组没有提供对应的属性或方法
             数组存储数据的特点: 有序 可重复  无法满足 无序 不可重复的需求
             
+
+Collection 接口 单列集合、用来储存一个一个的对象
+    List 元素有序、可重复的集合
+        ArrayList  LinkedList 
+    Set 元素无序、不可重复的集合
+        HashSet LinkedHashSet TreeSet
+Map 接口 用来存储一对数据（key-value）
+    HashMap LinkedHashMap TreeMap Hashtable Properties
