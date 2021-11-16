@@ -966,3 +966,15 @@ Collection 接口 单列集合、用来储存一个一个的对象
         HashSet LinkedHashSet TreeSet
 Map 接口 用来存储一对数据（key-value）
     HashMap LinkedHashMap TreeMap Hashtable Properties
+    
+### 集合常用方法
+
+contains 判断集合中是否包含对应元素
+containsAll 判断形参中的所有元素是否都存在于当前集合中
+remove 返回Boolean 判断是否移除该元素
+retainAll 返回两个集合的交集
+removeAll 删除对应集合中的所有元素
+
+iterator 迭代器方法 
+while (collection.interator().hasNext()):
+    collection.interator().Next()
