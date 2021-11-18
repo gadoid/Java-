@@ -977,4 +977,4 @@ removeAll 删除对应集合中的所有元素
 
 iterator 迭代器方法 
 while (collection.interator().hasNext()):
-    collection.interator().Next(),
+    collection.interator().Next()
