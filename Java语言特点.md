@@ -973,7 +973,7 @@ contains 判断集合中是否包含对应元素
 containsAll 判断形参中的所有元素是否都存在于当前集合中
 remove 返回Boolean 判断是否移除该元素
 retainAll 返回两个集合的交集
-removeAll 删除对应集合中的所有元素。
+removeAll 删除对应集合中的所有元素
 
 iterator 迭代器方法 
 while (collection.interator().hasNext()):
