@@ -978,3 +978,14 @@ removeAll 删除对应集合中的所有元素
 iterator 迭代器方法 
 while (collection.interator().hasNext()):
     collection.interator().Next()
+
+### List 结构
+
+    List 接口 存储有序的、可重复的数据
+——  ArrayList 作为List的主要实现类 线程不安全 效率高 底层使用 object[] 
+——  LinkedList  底层使用双向链表存储，插入\删除操作比ArrayList 效率高
+——  Vector  作为List接口的古老实现类 线程安全、效率低
+
+ArrayList 源码
+    7   初始化创建一个长度为10的数组
+    8   初始化创建一个空数组
