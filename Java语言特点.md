@@ -989,3 +989,25 @@ while (collection.interator().hasNext()):
 ArrayList 源码
     7   初始化创建一个长度为10的数组
     8   初始化创建一个空数组
+
+## Set
+
+Collection 接口 单列集合
+    Set 接口 存储 无序、不可重复的数据
+        HashSet 作为Set接口的主要实现类，线程不安全可存储null
+            LinkHashSet HashSet的子类，遍历其内部数据时 可以按照添加顺序遍历
+        TreeSet 可以按照添加对象的指定属性，进行排序
+
+无序性 不等于随机性
+存储的数据在底层数组中并非按照数组索引的顺序添加
+不可重复性
+保证添的元素按照equals()判断时，不能返回true，即 相同的元素只能添加一个
+
+添加元素的过程，以HashSet 为例
+    先调用元素a的HashCode 方法 计算a元素的哈希值
+    此哈希值接着要通过某种算法计算出在HashSet底层数组中的存放位置
+        如果hash值不相同，则元素a添加成功
+        如果hash值相同，进而需要调用元素a所在类的equals方法
+            equals 返回true 元素添加失败
+            equals 返回false 元素添加成功
+
