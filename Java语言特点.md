@@ -996,6 +996,7 @@ Collection 接口 单列集合
     Set 接口 存储 无序、不可重复的数据
         HashSet 作为Set接口的主要实现类，线程不安全可存储null
             LinkHashSet HashSet的子类，遍历其内部数据时 可以按照添加顺序遍历
+            LinkHashSet 里 定义了一个双向链表来获取每个元素后连结的元素   
         TreeSet 可以按照添加对象的指定属性，进行排序
 
 无序性 不等于随机性
@@ -1008,6 +1009,6 @@ Collection 接口 单列集合
     此哈希值接着要通过某种算法计算出在HashSet底层数组中的存放位置
         如果hash值不相同，则元素a添加成功
         如果hash值相同，进而需要调用元素a所在类的equals方法
-            equals 返回true 元素添加失败
+            equals 返回true 元素添加失败。
             equals 返回false 元素添加成功
 
