@@ -1011,5 +1011,3 @@ Collection 接口 单列集合
         如果hash值相同，进而需要调用元素a所在类的equals方法
             equals 返回true 元素添加失败
             equals 返回false 元素添加成功。
-
-。。。
