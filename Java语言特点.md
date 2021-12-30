@@ -1012,4 +1012,3 @@ Collection 接口 单列集合
             equals 返回true 元素添加失败
             equals 返回false 元素添加成功。
 
-。。。
