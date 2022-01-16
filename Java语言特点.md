@@ -925,7 +925,7 @@ JDK 5.0新增
 4 如果自定义注解没有成员，表明是一个标识作用
 
 public @interface  注解名 {
-    String value() default value;
+String value() default value;
 }
 
 ### 元注解
@@ -949,24 +949,23 @@ TYPE_Parameter  注解可以添加在变量声明时
 ## 集合 （容器）
 
 1 集合\数组都是对多个数据进行存储操作的结构，简称Java容器
-    说明：此时的存储， 主要指的是内存层面的存储，不涉及道持久化的存储
+说明：此时的存储， 主要指的是内存层面的存储，不涉及道持久化的存储
 2 数据在存储多个数据方面的特定
-    数组    初始化后 长度就确定了
-            数组一旦定义好，元素的类型也确定了
-            一旦初始化后，长度不可以修改
-            数组中提供的方法非常有限
-            获取数组中实际元素的个数的需求 数组没有提供对应的属性或方法
-            数组存储数据的特点: 有序 可重复  无法满足 无序 不可重复的需求
-            
+数组    初始化后 长度就确定了
+数组一旦定义好，元素的类型也确定了
+一旦初始化后，长度不可以修改
+数组中提供的方法非常有限
+获取数组中实际元素的个数的需求 数组没有提供对应的属性或方法
+数组存储数据的特点: 有序 可重复  无法满足 无序 不可重复的需求
 
 Collection 接口 单列集合、用来储存一个一个的对象
-    List 元素有序、可重复的集合
-        ArrayList  LinkedList 
-    Set 元素无序、不可重复的集合
-        HashSet LinkedHashSet TreeSet
+List 元素有序、可重复的集合
+ArrayList  LinkedList
+Set 元素无序、不可重复的集合
+HashSet LinkedHashSet TreeSet
 Map 接口 用来存储一对数据（key-value）
-    HashMap LinkedHashMap TreeMap Hashtable Properties
-    
+HashMap LinkedHashMap TreeMap Hashtable Properties
+
 ### 集合常用方法
 
 contains 判断集合中是否包含对应元素
@@ -975,29 +974,32 @@ remove 返回Boolean 判断是否移除该元素
 retainAll 返回两个集合的交集
 removeAll 删除对应集合中的所有元素
 
-iterator 迭代器方法 
+iterator 迭代器方法
 while (collection.interator().hasNext()):
-    collection.interator().Next()
+collection.interator().Next()
 
 ### List 结构
 
-    List 接口 存储有序的、可重复的数据
-——  ArrayList 作为List的主要实现类 线程不安全 效率高 底层使用 object[] 
+```
+List 接口 存储有序的、可重复的数据
+```
+
+——  ArrayList 作为List的主要实现类 线程不安全 效率高 底层使用 object[]
 ——  LinkedList  底层使用双向链表存储，插入\删除操作比ArrayList 效率高
 ——  Vector  作为List接口的古老实现类 线程安全、效率低
 
 ArrayList 源码
-    7   初始化创建一个长度为10的数组
-    8   初始化创建一个空数组
+7   初始化创建一个长度为10的数组
+8   初始化创建一个空数组
 
 ## Set
 
 Collection 接口 单列集合
-    Set 接口 存储 无序、不可重复的数据
-        HashSet 作为Set接口的主要实现类，线程不安全可存储null
-            LinkHashSet HashSet的子类，遍历其内部数据时 可以按照添加顺序遍历
-            LinkHashSet 里 定义了一个双向链表来获取每个元素后连结的元素   
-        TreeSet 可以按照添加对象的指定属性，进行排序
+Set 接口 存储 无序、不可重复的数据
+HashSet 作为Set接口的主要实现类，线程不安全可存储null
+LinkHashSet HashSet的子类，遍历其内部数据时 可以按照添加顺序遍历
+LinkHashSet 里 定义了一个双向链表来获取每个元素后连结的元素
+TreeSet 可以按照添加对象的指定属性，进行排序
 
 无序性 不等于随机性
 存储的数据在底层数组中并非按照数组索引的顺序添加
@@ -1005,10 +1007,11 @@ Collection 接口 单列集合
 保证添的元素按照equals()判断时，不能返回true，即 相同的元素只能添加一个
 
 添加元素的过程，以HashSet 为例
-    先调用元素a的HashCode 方法 计算a元素的哈希值
-    此哈希值接着要通过某种算法计算出在HashSet底层数组中的存放位置
-        如果hash值不相同，则元素a添加成功
-        如果hash值相同，进而需要调用元素a所在类的equals方法
-            equals 返回true 元素添加失败
-            equals 返回false 元素添加成功。
+先调用元素a的HashCode 方法 计算a元素的哈希值
+此哈希值接着要通过某种算法计算出在HashSet底层数组中的存放位置
+如果hash值不相同，则元素a添加成功
+如果hash值相同，进而需要调用元素a所在类的equals方法
+equals 返回true 元素添加失败
+equals 返回false 元素添加成功。
 
+dfsfh
