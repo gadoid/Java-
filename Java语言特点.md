@@ -1009,7 +1009,7 @@ TreeSet 可以按照添加对象的指定属性，进行排序
 添加元素的过程，以HashSet 为sd例
 先调用元素a的HashCode 方法 计算a元素的哈希值
 此哈希值接着要通过某种算法计算出在HashSet底层数组中的存放位置
-如果hash值不相同，则元素a添加成功；；；ss
+如果hash值不相同，则元素a添加成功
 如果hash值相同，进而需要调用元素a所在类的equals方法
 equals 返回true 元素添加失败
 equals 返回false 元素添加成功。
