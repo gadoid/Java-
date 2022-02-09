@@ -17,7 +17,7 @@
 
 垃圾回收
 
-## JDKii
+## JDK
 
 Java Development Kit
 
